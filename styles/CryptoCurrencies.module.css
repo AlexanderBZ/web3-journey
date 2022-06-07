@@ -1,0 +1,23 @@
+.cryptoName {
+  font-size: 32px;
+}
+.symbol {
+  color: #ffffff;
+  opacity: 0.7;
+  margin-left: 10px !important;
+  font-size: 18px !important;
+}
+
+.cryptoBtn {
+  background: #f5f5f5 !important;
+  color: #3671e9 !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  padding: 10px !important;
+  margin-top: 30px !important;
+}
+
+.cryptoBtn svg {
+  font-size: 40px !important;
+}
