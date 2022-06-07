@@ -8,7 +8,7 @@ export default function Home() {
       {/* banner  */}
       <Banner />
       {/* SalariesContainer */}
-      {/* <SalariesContainer /> */}
+      <SalariesContainer />
       {/* newsletter  */}
       <Newsletter />
     </div>
