@@ -2,6 +2,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import { getData } from "../../../loader/getData";
 import React, { useState, useEffect } from "react";
 import Table from "./Table";
+import salariesStyles from "../../../styles/Salaries.module.css";
 
 export default function SalariesContainer({ data }) {
   const [salariesData, setSalariesData] = useState([]);
@@ -27,12 +28,18 @@ export default function SalariesContainer({ data }) {
   }, []);
 
   return (
-    <Container sx={{ py: 12 }}>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={{ xs: 2, md: 1 }} columns={{ xs: 2, md: 12 }}>
-          <Table data={salariesData} />
-        </Grid>
-      </Box>
-    </Container>
+    <div className={salariesStyles.container}>
+      <Container sx={{ py: 12 }}>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 1 }}
+            columns={{ xs: 2, md: 12 }}
+          >
+            <Table data={salariesData} />
+          </Grid>
+        </Box>
+      </Container>
+    </div>
   );
 }

@@ -73,7 +73,7 @@ const Banner = () => {
                   variant="h3"
                   component="h1"
                 >
-                  Get Payed Fairly in the Wild World of Web3
+                  Get Paid Fairly in the Wild World of Web3
                 </Typography>
                 <Typography variant="body1">
                   {`Hey it's Alexander (The founder of Web3 Journey), check out my newsletter to stay up to date on new and exciting companies in Web3`}
