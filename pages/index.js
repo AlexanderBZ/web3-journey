@@ -16,13 +16,14 @@ export default function Home({ data }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps() {
   // Get user id
   const salaries = await getSalaries();
 
   return {
     props: {
       data: salaries,
+      revalidate: 900,
     },
   };
 }
