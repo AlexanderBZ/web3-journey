@@ -3,7 +3,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
 import React from "react";
-import WebsiteLogo from "../../images/sailboat-logo.svg";
+import WebsiteLogo from "../../images/logo.svg";
 import footerStyles from "../../styles/Footer.module.css";
 
 const Footer = () => {

@@ -9,7 +9,7 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import * as React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import WebsiteLogo from "../../images/sailboat-logo.svg";
+import WebsiteLogo from "../../images/logo.svg";
 
 // navbar
 function Navigation(props) {
