@@ -5,27 +5,27 @@ import Table from "./Table";
 import salariesStyles from "../../../styles/Salaries.module.css";
 
 export default function SalariesContainer({ data }) {
-  const [salariesData, setSalariesData] = useState([]);
+  // const [salariesData, setSalariesData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(`/api/airtable`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const response = await fetch(`/api/airtable`, {
+  //       method: "GET",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     });
 
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
-      }
+  //     if (!response.ok) {
+  //       throw new Error(`Error: ${response.status}`);
+  //     }
 
-      const formattedData = await response.json();
-      setSalariesData(formattedData);
-    };
+  //     const formattedData = await response.json();
+  //     setSalariesData(formattedData);
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   return (
     <div className={salariesStyles.container}>
@@ -36,7 +36,7 @@ export default function SalariesContainer({ data }) {
             spacing={{ xs: 2, md: 1 }}
             columns={{ xs: 2, md: 12 }}
           >
-            <Table data={salariesData} />
+            <Table data={data} />
           </Grid>
         </Box>
       </Container>

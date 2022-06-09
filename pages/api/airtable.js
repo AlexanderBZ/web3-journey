@@ -33,7 +33,7 @@ const minifyRecord = (record) => {
   };
 };
 
-async function getSalaries() {
+export async function getSalaries() {
   const records = await table.select({}).all();
   const minifiedRecords = await getMinifiedRecords(records);
   return minifiedRecords;
